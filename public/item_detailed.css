@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  margin-bottom:20px ;
+  background-color: #30dfbc;
+  color: #000000;
+  z-index: var(--z-fixed);
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgb(160, 255, 234);
+}
+
+.nav_container{
+  height: var(--header-height);
+  display: flex;
+  
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: x-large;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+.nav__menu {
+  margin-left: auto;
+}
+
+.nav__button {
+  
+  padding: 8px 15px;
+  background-color: #f0f0f0; /* Button background color */
+  color: #000000; 
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.nav__button:hover {
+    background-color: #ff8e8e; /* Change background color on hover */
+}
+
+.dropdown img{
+    width:40px;
+    height:40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropbtn {
+    background-color: #30dfbc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ff0000;
+    border-radius: 10px;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  a {
+    color: black;
+    text-decoration: none; /* no underline */
+}
+
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container h1{
+    margin: 10px;
+}
+
+.container img{
+    max-height: 300px;
+    max-width: 300px;
+    margin: 10px;
+}
+.container p{
+    text-align: left;
+    margin: 10px;
+}

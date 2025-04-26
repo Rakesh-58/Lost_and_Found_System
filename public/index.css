@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5em 2em;
+  margin-bottom:20px ;
+  background-color: #30dfbc;
+  color: #f4f4f4;
+  z-index: var(--z-fixed);
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgb(160, 255, 234);
+}
+
+.nav_container{
+  height: var(--header-height);
+  display: flex;
+  
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: x-large;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+.nav__menu {
+  margin-left: auto;
+}
+
+.nav__button {
+  
+  padding: 8px 15px;
+  background-color: #f0f0f0; /* Button background color */
+  color: #000000; 
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+.nav__button:hover {
+    background-color: #ff8e8e; /* Change background color on hover */
+}
+
+.dropdown img{
+    width:40px;
+    height:40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropbtn {
+    background-color: #30dfbc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ff0000;
+    border-radius: 10px;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+h2 {
+    margin-bottom: 20px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    margin-right: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.tab:hover {
+    background-color: #d3d3d3;
+}
+.active {
+    background-color: #007bff;
+    color: white;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    max-width: 270px;
+    max-height: 220px;
+    min-height: 220px;
+    object-fit: cover;
+}
+.card h4,.card p{
+    margin: 4px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #30dfbc;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-button:hover {
+    background-color: #196757;
+}
+a {
+    color: black;
+    text-decoration: none; /* no underline */
+}
